@@ -3,6 +3,7 @@
 <html lang="en">
 	<head>
 <TITLE>Hello:D</TITLE> 
+<!--I love You http://daviz-official.6te.net/crush.jpg-->
 <script language="JavaScript"> 
  
 function tb5_makeArray(n){
@@ -11,11 +12,10 @@ function tb5_makeArray(n){
 }
  
 tb5_messages = new tb5_makeArray(5);
-tb5_messages[0] = "Good Morning Everybody";
-tb5_messages[1] = "Good Afternoon Everybody";
-tb5_messages[2] = "Good Evening Everybody";
-tb5_messages[3] = "Good Night Everybody";
-tb5_messages[4] = "<3";
+tb5_messages[0] = "";
+tb5_messages[1] = "";
+tb5_messages[2] = "";
+tb5_messages[3] = "";
 tb5_rptType = 'infinite';
 tb5_rptNbr = 20;
 tb5_speed = 30;
@@ -97,7 +97,7 @@ tb5_randomizetitle();
 	  		position: absolute;
 	  		z-index: -1;
 	  	}
-	  	.ubuntu{
+	  	.love{
 	  		background: linear-gradient(to left,#8942A8,#BA382F);
 	  		opacity: 0;
 	  	}
@@ -106,7 +106,7 @@ tb5_randomizetitle();
 	  		opacity: 0;
 	  	}
 	  	.morning{
-	  		background: linear-gradient(0deg, rgba(255,230,113,1) 0%, rgba(82,167,255,1) 100%);
+	  		background: linear-gradient(0deg, rgb(251, 255, 9) 0%, rgba(82,167,255,1) 100%);
 	  		opacity: 0;
 	  	}
 	  	.noon{
@@ -127,22 +127,6 @@ tb5_randomizetitle();
 	  	}
 	  	.midnight{
 	  		background: linear-gradient(0deg, rgba(0,3,60,1) 0%, rgba(0,0,0,1) 100%);
-	  		opacity: 0;
-	  	}
-	  	.red{
-	  		background: linear-gradient(90deg, rgba(255,0,255,1) 0%, rgba(255,0,0,1) 50%, rgba(255,255,0,1) 100%);
-	  		opacity: 0;
-	  	}
-	  	.green{
-	  		background: linear-gradient(90deg, rgba(255,255,0,1) 0%, rgba(0,255,0,1) 50%, rgba(0,255,255,1) 100%);
-	  		opacity: 0;
-	  	}
-	  	.blue{
-	  		background: linear-gradient(90deg, rgba(0,255,255,1) 0%, rgba(0,0,255,1) 50%, rgba(255,0,255,1) 100%);
-	  		opacity: 0;
-	  	}
-	  	.custom{
-	  		background-color: #0079FF;
 	  		opacity: 0;
 	  	}
 	  	.jam,.ucapan,.quotes{
@@ -388,11 +372,7 @@ tb5_randomizetitle();
 		    </div>   
 		    <div class="custom-control custom-radio">
 		      <input type="radio" class="custom-control-input" id="customRadio1" name="example1">
-		      <label class="custom-control-label" for="customRadio1">Ubuntu Style</label>
-		    </div>   
-		    <div class="custom-control custom-radio">
-		      <input type="radio" class="custom-control-input" id="customRadio10" name="example1">
-		      <label class="custom-control-label" for="customRadio10">Manual Input</label>
+		      <label class="custom-control-label" for="customRadio1">Love</label>
 		    </div>   
 		    <div class="custom-control custom-radio">
 		      <input type="radio" class="custom-control-input" id="customRadio2" name="example1">
@@ -424,7 +404,7 @@ tb5_randomizetitle();
 		    </div> 
 		    <input class="btn mt-3" id="color-picker" value='#0079FF' onclick="onClickWarna()" />
 		</div>
-		<div class="bg ubuntu"></div>
+		<div class="bg love"></div>
 		<div class="bg dawn"></div>
 		<div class="bg morning"></div>
 		<div class="bg noon"></div>
@@ -432,10 +412,6 @@ tb5_randomizetitle();
 		<div class="bg sunset"></div>
 		<div class="bg evening"></div>
 		<div class="bg midnight"></div>
-		<div class="bg red"></div>
-		<div class="bg green"></div>
-		<div class="bg blue"></div>
-		<div class="bg custom"></div>
 		<div class="container">
 			<div class="quotes">
 				<p id="quotation"></p>
@@ -457,7 +433,7 @@ tb5_randomizetitle();
 				00:00:00
 			</div>
 			<div class="ucapan" id="quote"></div>
-			<div class="note">HALO</div>
+			<div class="note">HAI</div>
 			<div class="pengembang">Daviz Arva</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -585,10 +561,10 @@ tb5_randomizetitle();
 			}
 			function specialEffects(){
 				if(localStorage.getItem("manualColor")=="#4c1130"){
-					setTimeout(function() { createNote("Halo Daviz ^_^ Jangan Lupa Berisirahat"); }, 5000);
+					setTimeout(function() { createNote("Halo ^_^ Jangan Lupa Beristirahat"); }, 5000);
 				}
 				else if(localStorage.getItem("manualColor")=="#000000"){
-					setTimeout(function() { createNote("Daviz Sehat Selalu Disana ^_^"); }, 5000);
+					setTimeout(function() { createNote("Halo ^_^ Jangan Lupa Beristirahat"); }, 5000);
 				}
 			}
 			function createNote(isi){
@@ -640,8 +616,8 @@ tb5_randomizetitle();
 					cek=false;
 				}
 				if($("#customRadio1").prop('checked')){
-					ubuntu();
-					localStorage.setItem("mode", "ubuntu");
+					love();
+					localStorage.setItem("mode", "love");
 				}
 				else if($("#customRadio2").prop('checked')){
 					dawn();
@@ -671,21 +647,9 @@ tb5_randomizetitle();
 					midnight();
 					localStorage.setItem("mode", "midnight");
 				}
-				else if($("#customRadio10").prop('checked')){
-					manual();
-					localStorage.setItem("mode", "manual");
-				}
-				else if($("#customRadio9").prop('checked')){
-					gaming1();
-					localStorage.setItem("mode", "gaming1");
-					gaming=true;
-				}
-				if (gaming==false){
-					nofill();
-				}
 			});
-			function ubuntu(){
-				$(".ubuntu").animate({opacity:"1"},1000);
+			function love(){
+				$(".love").animate({opacity:"1"},1000);
 				$(".dawn").animate({opacity:"0"},500);
 				$(".morning").animate({opacity:"0"},500);
 				$(".noon").animate({opacity:"0"},500);
@@ -693,209 +657,85 @@ tb5_randomizetitle();
 				$(".sunset").animate({opacity:"0"},500);
 				$(".evening").animate({opacity:"0"},500);
 				$(".midnight").animate({opacity:"0"},500);
-				$(".red").animate({opacity:"0"},500);
-				$(".green").animate({opacity:"0"},500);
-				$(".blue").animate({opacity:"0"},500);
-				$(".custom").animate({opacity:"0"},500);
 				white();
 			}
 			function dawn(){
 				$(".dawn").animate({opacity:"1"},1000);
-				$(".ubuntu").animate({opacity:"0"},500);
+				$(".love").animate({opacity:"0"},500);
 				$(".morning").animate({opacity:"0"},500);
 				$(".noon").animate({opacity:"0"},500);
 				$(".afternoon").animate({opacity:"0"},500);
 				$(".sunset").animate({opacity:"0"},500);
 				$(".evening").animate({opacity:"0"},500);
 				$(".midnight").animate({opacity:"0"},500);
-				$(".red").animate({opacity:"0"},500);
-				$(".green").animate({opacity:"0"},500);
-				$(".blue").animate({opacity:"0"},500);
-				$(".custom").animate({opacity:"0"},500);
 				black();
 			}
 			function morning(){
 				$(".morning").animate({opacity:"1"},1000);
 				$(".dawn").animate({opacity:"0"},500);
-				$(".ubuntu").animate({opacity:"0"},500);
+				$(".love").animate({opacity:"0"},500);
 				$(".noon").animate({opacity:"0"},500);
 				$(".afternoon").animate({opacity:"0"},500);
 				$(".sunset").animate({opacity:"0"},500);
 				$(".evening").animate({opacity:"0"},500);
 				$(".midnight").animate({opacity:"0"},500);
-				$(".red").animate({opacity:"0"},500);
-				$(".green").animate({opacity:"0"},500);
-				$(".blue").animate({opacity:"0"},500);
-				$(".custom").animate({opacity:"0"},500);
 				black();
 			}
 			function noon(){
 				$(".noon").animate({opacity:"1"},1000);
 				$(".dawn").animate({opacity:"0"},500);
-				$(".ubuntu").animate({opacity:"0"},500);
+				$(".love").animate({opacity:"0"},500);
 				$(".morning").animate({opacity:"0"},500);
 				$(".afternoon").animate({opacity:"0"},500);
 				$(".sunset").animate({opacity:"0"},500);
 				$(".evening").animate({opacity:"0"},500);
 				$(".midnight").animate({opacity:"0"},500);
-				$(".red").animate({opacity:"0"},500);
-				$(".green").animate({opacity:"0"},500);
-				$(".blue").animate({opacity:"0"},500);
-				$(".custom").animate({opacity:"0"},500);
 				black();
 			}
 			function afternoon(){
 				$(".afternoon").animate({opacity:"1"},1000);
 				$(".dawn").animate({opacity:"0"},500);
-				$(".ubuntu").animate({opacity:"0"},500);
+				$(".love").animate({opacity:"0"},500);
 				$(".morning").animate({opacity:"0"},500);
 				$(".noon").animate({opacity:"0"},500);
 				$(".sunset").animate({opacity:"0"},500);
 				$(".evening").animate({opacity:"0"},500);
 				$(".midnight").animate({opacity:"0"},500);
-				$(".red").animate({opacity:"0"},500);
-				$(".green").animate({opacity:"0"},500);
-				$(".blue").animate({opacity:"0"},500);
-				$(".custom").animate({opacity:"0"},500);
 				black();
 			}
 			function sunset(){
 				$(".sunset").animate({opacity:"1"},1000);
 				$(".dawn").animate({opacity:"0"},500);
-				$(".ubuntu").animate({opacity:"0"},500);
+				$(".love").animate({opacity:"0"},500);
 				$(".morning").animate({opacity:"0"},500);
 				$(".noon").animate({opacity:"0"},500);
 				$(".afternoon").animate({opacity:"0"},500);
 				$(".evening").animate({opacity:"0"},500);
 				$(".midnight").animate({opacity:"0"},500);
-				$(".red").animate({opacity:"0"},500);
-				$(".green").animate({opacity:"0"},500);
-				$(".blue").animate({opacity:"0"},500);
-				$(".custom").animate({opacity:"0"},500);
 				white();
 			}
 			function evening(){
 				$(".evening").animate({opacity:"1"},1000);
 				$(".dawn").animate({opacity:"0"},500);
-				$(".ubuntu").animate({opacity:"0"},500);
+				$(".love").animate({opacity:"0"},500);
 				$(".morning").animate({opacity:"0"},500);
 				$(".noon").animate({opacity:"0"},500);
 				$(".afternoon").animate({opacity:"0"},500);
 				$(".sunset").animate({opacity:"0"},500);
 				$(".midnight").animate({opacity:"0"},500);
-				$(".red").animate({opacity:"0"},500);
-				$(".green").animate({opacity:"0"},500);
-				$(".blue").animate({opacity:"0"},500);
-				$(".custom").animate({opacity:"0"},500);
 				white();
 			}
 			function midnight(){
 				$(".midnight").animate({opacity:"1"},1000);
 				$(".dawn").animate({opacity:"0"},500);
-				$(".ubuntu").animate({opacity:"0"},500);
+				$(".love").animate({opacity:"0"},500);
 				$(".morning").animate({opacity:"0"},500);
 				$(".noon").animate({opacity:"0"},500);
 				$(".afternoon").animate({opacity:"0"},500);
 				$(".sunset").animate({opacity:"0"},500);
 				$(".evening").animate({opacity:"0"},500);
-				$(".red").animate({opacity:"0"},500);
-				$(".green").animate({opacity:"0"},500);
-				$(".blue").animate({opacity:"0"},500);
-				$(".custom").animate({opacity:"0"},500);
 				white();
 			}
-			function red(){
-				$(".jam").css("color","#F00");
-				$(".ucapan").css("color","#F00");
-				$(".bulat span").css("border-color","#F00");
-				$(".kotak li").css("background","#000");
-				$(".red").animate({opacity:"1"},1000);
-				$(".midnight").animate({opacity:"0"},500);
-				$(".dawn").animate({opacity:"0"},500);
-				$(".ubuntu").animate({opacity:"0"},500);
-				$(".morning").animate({opacity:"0"},500);
-				$(".noon").animate({opacity:"0"},500);
-				$(".afternoon").animate({opacity:"0"},500);
-				$(".sunset").animate({opacity:"0"},500);
-				$(".evening").animate({opacity:"0"},500);
-				$(".green").animate({opacity:"0"},500);
-				$(".blue").animate({opacity:"0"},500);
-				$(".custom").animate({opacity:"0"},500);
-				white();
-			}
-			function green(){
-				$(".jam").css("color","#0F0");
-				$(".ucapan").css("color","#0F0");
-				$(".bulat span").css("border-color","#0F0");
-				$(".kotak li").css("background","#000");
-				$(".green").animate({opacity:"1"},1000);
-				$(".midnight").animate({opacity:"0"},500);
-				$(".dawn").animate({opacity:"0"},500);
-				$(".ubuntu").animate({opacity:"0"},500);
-				$(".morning").animate({opacity:"0"},500);
-				$(".noon").animate({opacity:"0"},500);
-				$(".afternoon").animate({opacity:"0"},500);
-				$(".sunset").animate({opacity:"0"},500);
-				$(".evening").animate({opacity:"0"},500);
-				$(".red").animate({opacity:"0"},500);
-				$(".blue").animate({opacity:"0"},500);
-				$(".custom").animate({opacity:"0"},500);
-				white();
-			}
-			function blue(){
-				$(".jam").css("color","#00F");
-				$(".ucapan").css("color","#00F");
-				$(".bulat span").css("border-color","#00F");
-				$(".kotak li").css("background","#000");
-				$(".blue").animate({opacity:"1"},1000);
-				$(".midnight").animate({opacity:"0"},500);
-				$(".dawn").animate({opacity:"0"},500);
-				$(".ubuntu").animate({opacity:"0"},500);
-				$(".morning").animate({opacity:"0"},500);
-				$(".noon").animate({opacity:"0"},500);
-				$(".afternoon").animate({opacity:"0"},500);
-				$(".sunset").animate({opacity:"0"},500);
-				$(".evening").animate({opacity:"0"},500);
-				$(".red").animate({opacity:"0"},500);
-				$(".green").animate({opacity:"0"},500);
-				$(".custom").animate({opacity:"0"},500);
-				white();
-			}
-			function manual(){
-				$(".custom").animate({opacity:"1"},1000);
-				$(".midnight").animate({opacity:"0"},500);
-				$(".dawn").animate({opacity:"0"},500);
-				$(".ubuntu").animate({opacity:"0"},500);
-				$(".morning").animate({opacity:"0"},500);
-				$(".noon").animate({opacity:"0"},500);
-				$(".afternoon").animate({opacity:"0"},500);
-				$(".sunset").animate({opacity:"0"},500);
-				$(".evening").animate({opacity:"0"},500);
-				$(".red").animate({opacity:"0"},500);
-				$(".green").animate({opacity:"0"},500);
-				$(".blue").animate({opacity:"0"},500);
-				white();
-			}
-			warna=1;
-			function gaming1(){
-				if (gaming){
-					fillblack();
-					if (warna==1){
-						red();
-					}
-					else if (warna==2) {
-						green();
-					}
-					else if (warna==3) {
-						blue();
-					}
-					warna+=1;
-					if (warna==4){
-						warna=1;
-					}
-				}
-			}
-			setInterval(gaming1, 4000);
 			function black(){
 				$(".jam").css("color","#000");
 				$(".ucapan").css("color","#000");
@@ -922,7 +762,7 @@ tb5_randomizetitle();
 				console.log('debug');
 			}
 
-			var txt = 'sad';
+			var txt = 'Halo Daviz ku sayang';
 			var txt2 = 'txt';
 
 			function checkTime(i) {
@@ -946,43 +786,43 @@ tb5_randomizetitle();
 				S=s;
 
 				if (H<5){
-					txt='Good Morning';
+					txt='MidNight💖';
+					if(txt != txt2 && !starting)
+						document.getElementById("quote").innerHTML = txt;
+					txt2=txt;
+				}
+				else if(H<9){
+					txt='Good Morning Daviz💖';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<12){
-					txt='Good Afternoon';
+					txt='Dont Forget Activities💖.';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
-				else if(H<18){
-					txt='Good Evening';
-					if(txt != txt2 && !starting)
-						document.getElementById("quote").innerHTML = txt;
-					txt2=txt;
-				}
-				else if(H<18){
-					txt='Good Evening ^_^';
+				else if(H<16){
+					txt='Good Afternoon Daviz💖';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<19){
-					txt='Good Night ^_^';
+					txt='Good Afternoon, Take a Rest💖';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
-				else if(H<21){
-					txt='Good Night ^_^)';
+				else if(H<23){
+					txt='Good Evening Daviz 💖';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<=24){
-					txt='Good Night<3';
+					txt='Good Night Daviz💖';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
@@ -1055,7 +895,7 @@ tb5_randomizetitle();
 			    "source": "Imam Syafi'i"
 			  },
 			  {
-			    "quote": "Semakin Anda Mengenal Cinta Dan Kasih Sayang Semakin Dekat Pula Anda Terhadap Kebencian.",
+			    "quote": "Semakin anda Mengenal Cinta Dan Kasih Sayang Semakin Dekat Pula anda Terhadap Kebencian.",
 			    "source": "Daviz Arva"
 			  },
 			  {
@@ -1067,7 +907,7 @@ tb5_randomizetitle();
 			    "source": "Kazekage Gaara"
 			  },
 			  {
-			    "quote": "Tidak Ada Yang Namanya Harapan Didunia Ini, Yang Ada Hanyalah Dunia Mimpi.",
+			    "quote": "Tidak Ada Yang Namanya Harapan Didunia Ini, Yang Ada Hanyalah Mimpi.",
 			    "source": "Uchiha Obito"
 			  },
 			  {
